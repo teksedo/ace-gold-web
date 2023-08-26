@@ -1,0 +1,63 @@
+@media screen and (max-width: 1199px) {
+.font-size-60 {font-size: 50px;}
+.font-size-28 {font-size: 24px;}
+.font-size-20 {font-size: 16px;}
+.font-size-18 {font-size: 16px;}
+.font-size-16 {font-size: 15px;}
+/*23-3-23*/
+.jewelry-business-online .jewelry-business-box img {max-width: 90px;}
+.jewelry-business-online .jewelry-business-box  h2 {font-size: 3rem;}
+.homepad.footer-form {padding-top: 10rem;}
+/*23-3-23*/
+}	
+
+@media screen and (max-width: 991px) {
+.font-size-55 {font-size: 42px;}
+.font-size-24 {font-size: 20px;}
+.font-size-22 {font-size: 16px;}
+.features-box h2 {min-height: 42px;}	
+
+/*23-3-23*/
+.font-size-36 {font-size: 26px;}
+.homepad.footer-form {padding-top: 7rem;}
+/*23-3-23*/
+}
+
+@media screen and (max-width: 767px) {
+.font-size-60 {font-size: 40px;}
+.font-size-55 {font-size: 32px;}
+.font-size-28 {font-size: 20px;}
+.font-size-24 {font-size: 18px;}
+.features-box h2 {min-height: 24px;}
+.homepad {padding-top: 3rem; padding-bottom: 3rem;}
+.download_app_now {bottom: 0; left: 0; right: 0;}
+.whatcan {min-width: 50px; max-width: 50px;}
+
+/*23-3-23*/
+.jewelry-business-online .jewelry-business-box h2 {font-size: 2.3rem;}
+.jewelry-business-online .jewelry-business-box img {max-width: 70px;}
+.your-online-store-row .your-online-store-box:nth-child(2n+3) {clear: left;}
+.homepad.footer-form {padding-top: 4rem;}
+/*23-3-23*/
+}
+
+
+@media screen and (max-width: 575px) {
+.font-size-60 {font-size: 30px;}
+.font-size-28 {font-size: 18px;}
+.font-size-55 {font-size: 28px;}
+.font-size-15 {font-size: 14px !important;}
+.features-box h2 {min-height: auto;}
+
+/*23-3-23*/
+.your-online-store-box img {max-width: 60px;}
+.jewelry-business-online .jewelry-business-box h2 {
+    font-size: 2rem;
+}
+/*23-3-23*/
+
+.trusticon{width : 72%;}
+}
+
+
+

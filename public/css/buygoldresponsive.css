@@ -1,0 +1,58 @@
+@media screen and (max-width: 1199px) {
+.font-size-60 {font-size: 50px;}
+.font-size-28 {font-size: 24px;}
+.font-size-20 {font-size: 16px;}
+.font-size-18 {font-size: 16px;}
+.font-size-16 {font-size: 15px;}
+.investment_work_pad_r {padding-right: 6rem !important;} 
+}	
+
+@media screen and (max-width: 991px) {
+.font-size-55 {font-size: 42px;}
+.font-size-24 {font-size: 20px;}
+.font-size-22 {font-size: 16px;}
+.features-box h2 {min-height: 42px;}
+.investment_work_pad_r {
+       padding-right: 15px !important;
+}
+.buygold-testimonial.slick-dotted.slick-slider ul.slick-dots {
+    bottom: -38px;
+}
+.warning.buygold-section {
+    margin-bottom: 30px;
+}
+.investment_work_pad_l {
+    padding-left: 15px!important;
+    padding-top: 0rem;
+    padding-right: 15px!important;
+}
+.buygold-section {
+    overflow: hidden;
+}	
+}
+
+@media screen and (max-width: 767px) {
+.font-size-60 {font-size: 40px;}
+.font-size-55 {font-size: 32px;}
+.font-size-28 {font-size: 20px;}
+.font-size-24 {font-size: 18px;}
+.features-box h2 {min-height: 24px;}
+.homepad {padding-top: 3rem; padding-bottom: 3rem;}
+.download_app_now {bottom: 0; left: 0; right: 0;}
+.whatcan {min-width: 50px; max-width: 50px;}
+.investment_work_pad_r {
+    padding-right: 15px !important;
+}
+}
+
+
+@media screen and (max-width: 575px) {
+.font-size-60 {font-size: 30px;}
+.font-size-28 {font-size: 18px;}
+.font-size-55 {font-size: 28px;}
+.font-size-15 {font-size: 14px !important;}
+.features-box h2 {min-height: auto;}
+}
+
+
+
