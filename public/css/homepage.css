@@ -1350,7 +1350,7 @@ button.btn-buy {
 .footer-part .social-media {
   float: right;
   width: 28px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .footer-part a {
@@ -1375,7 +1375,9 @@ button.btn-buy {
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
 }
-
+.footer-part .social-media a i {
+  margin-top: 5px;
+}
 .footer-part .contact-us p {
   font-size: 16px;
   line-height: 21px;
