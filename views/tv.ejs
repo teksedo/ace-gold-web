@@ -961,6 +961,86 @@
       console.log("Disconnected from the server");
     });
   </script>
-  <%-include("layouts/footer.ejs")%>
+  <!-- ========== Start footer ========== -->
+  <%-include('layouts/footer.ejs')%>
+  <!-- ========== End footer ========== -->
+  <div class="modal fade" id="show_jeweller_ad" tabindex="-1" role="dialog" aria-labelledby="show_jeweller_ad" aria-hidden="true">
+    <div class="modal-dialog w-500-d-i">
+      <div class="modal-content">
+        <div class="modal-body jeweller_model_ad">
+          <button type="button" class="adclosebtn" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <a href="/">
+            <img src="/images/ACE Gold Logo Transparent.png" width="100%"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var cdate = new Date();
+    var cminutes = 10;
+    cdate.setTime(cdate.getTime() + (cminutes * 60 * 1000));
+  </script>
+  <script type="text/javascript">
+    const COUNTRY_URL = "ajax/get/countrie.html",
+      STATE_URL = "ajax/get/states.html",
+      CITY_URL = "ajax/get/cities.html";
+    var is_country = false,
+      countires_id = "",
+      states_id = "",
+      cities_id = "";
+  </script>
+  <script src="js/vendor.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.selectBoxIt.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/select2.full.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207044394-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-207044394-1');
+  </script>
+  <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // $('#show_jeweller_ad').modal('show');
+      console.log("ad visited");
+      var visited = jQuery.cookie('visited');
+      if (visited == 'yes') {
+
+      } else {
+        $('#show_jeweller_ad').modal('show');
+      }
+      jQuery.cookie('visited', 'yes', {
+        expires: cdate // the number of days cookie  will be effective
+      });
+    });
+  </script>
+  <script src="js/authentication.js"></script>
+  <script src="js/theme.js"></script>
+  <script type="text/javascript">
+    setInterval(function() {
+      window.location.reload();
+    }, 300000);
+
+    var app_get_sms_request = "ajax/send/getapp/sms.html";
+
+    var buy_gold_ajax_request = "ajax/buy/calculate.html";
+    var buy_gold_availability_ajax_request = "ajax/buy/availability.html";
+
+    var buy_silver_ajax_request = "ajax/buy/silver/calculate.html";
+    var buy_silver_availability_ajax_request = "ajax/buy/silver/availability.html";
+  </script>
+  <script src="js/jQuery.app-sms.js"></script>
+  <script src="js/jQuery.rates.js"></script>
+  <script src="js/jQuery.buy-gold.js"></script>
+  <script src="js/jQuery.buy-silver.js"></script>
 </body>
 </html>
