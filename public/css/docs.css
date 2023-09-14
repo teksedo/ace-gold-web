@@ -1276,7 +1276,7 @@ header .container {
 }
 .manage-transaction.table > thead > tr > th {
   font-weight: 600;
-  color: #b8565f;
+  color: rgb(225, 202, 73);
   padding-bottom: 15px;
   padding-left: 0;
 }
@@ -4940,4 +4940,22 @@ footer.inner-footer.footer::before {
   }
 }
 
+@media (min-width: 1201px) and (max-width: 2000px) {
+  .tv-header {
+    margin-top: 5em;
+  }
+  .tv-items-tableone {
+    margin-top: 2em;
+    background-color: #ebd398;
+    color: #000;
+    border-radius: 8px;
+    width: calc(50% - 40px); /* Adjust the width for three columns */
+    margin: 5px;
+  }
+  .table_data_silver {
+    margin: auto;
+    width: 96.6%;
+    font-size: 16px;
+  }
+}
 /***** End tv page *****/
