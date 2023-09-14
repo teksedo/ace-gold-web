@@ -769,8 +769,8 @@
               </div>
         </div>
     </div>
-    <div class="tv-items-one tv_bg_none">
-      <div><img src="/images/ACE Gold Logo Transparent.png" alt=""  ></div>
+    <div class="tv-items-one tv_bg_none ace_img_display">
+      <div ><img src="/images/ACE Gold Logo Transparent.png" alt=""></div>
   </div> 
     <div class="tv-items-one">
         <div class="bid_head">
@@ -829,10 +829,8 @@
            <div class="table_data_aed" id="gold9999"></div>
            </div>
           </div>
-           </div>
-           
-           </div>
-           
+           </div>    
+           </div>        
     </div>
     <div class="container">
       <div class="table_data_silver"><h2>SILVER 1KG</h2> <h2 id="silver"></h2></div>
@@ -964,6 +962,34 @@
       console.log("Disconnected from the server");
     });
   </script>
- 
+   <script type="text/javascript">
+    const COUNTRY_URL = "../ajax/get/countrie.html",
+      STATE_URL = "../ajax/get/states.html",
+      CITY_URL = "../ajax/get/cities.html";
+    var is_country = false,
+      countires_id = "",
+      states_id = "",
+      cities_id = "";
+  </script>
+  <script src="../js/vendor.js"></script>
+  <script src="../js/bootstrap-select.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script src="../js/jquery.selectBoxIt.min.js"></script>
+  <script src="../js/custom.js"></script>
+  <script src="../js/global.js"></script>
+  <script src="../js/select2.full.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207044394-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-207044394-1");
+  </script>
+  <script src="../js/authentication.js"></script>
+  <script src="../js/theme.js"></script>
 </body>
 </html>

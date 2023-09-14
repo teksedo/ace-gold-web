@@ -4848,7 +4848,9 @@ footer.inner-footer.footer::before {
   width: calc(300px - 40px); /* Adjust the width for three columns */
   margin: 5px;
 }
-
+.ace_img_display {
+  visibility: visible;
+}
 @media (max-width: 1200px) {
   .tv-items-one {
     width: calc(250px - 40px); /* Adjust the width for three columns */
@@ -4903,6 +4905,7 @@ footer.inner-footer.footer::before {
   justify-content: center;
   gap: 10px;
   margin: auto;
+  height: auto;
   max-width: calc(760px - 40px);
   font-size: 20px;
   background: #d9d9d9 !important;
@@ -4949,6 +4952,9 @@ footer.inner-footer.footer::before {
     max-width: calc(300px - 40px);
     margin-top: -30px;
     font-size: 16px;
+  }
+  .ace_img_display {
+    display: none;
   }
 }
 @media (min-width: 1201px) and (max-width: 3000px) {
