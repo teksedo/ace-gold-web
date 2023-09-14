@@ -4782,11 +4782,11 @@ footer.inner-footer.footer::before {
 .tv-items {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  align-content: center;
+  justify-content: center;
   text-align: center;
   flex-wrap: wrap;
   padding: 10px;
+  gap: 50px;
 }
 
 .tv-items-one {
@@ -4794,25 +4794,13 @@ footer.inner-footer.footer::before {
   background-color: #ebd398;
   color: #000;
   border-radius: 8px;
-  width: calc(20.33% - 40px); /* Adjust the width for three columns */
+  width: calc(250px - 40px); /* Adjust the width for three columns */
+  height: auto;
   margin: 5px;
 }
 
-/* Styles for smaller screens */
-@media (max-width: 768px) {
-  .tv-items {
-    flex-direction: column; /* Stack items vertically */
-  }
-
-  .tv-items-one {
-    width: 75%; /* Full width for one column */
-    height: auto;
-    margin: 10px 0; /* Reduce vertical margin */
-  }
-}
-
 .tv-items-one span {
-  padding: 20px;
+  padding: 8px;
   color: #000;
   font-weight: 400;
 }
@@ -4846,33 +4834,39 @@ footer.inner-footer.footer::before {
 .tv-items-table {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
   padding: 30px;
+  gap: 0px;
 }
 .tv-items-tableone {
   margin-top: 2em;
   background-color: #ebd398;
   color: #000;
   border-radius: 8px;
-  width: calc(33.33% - 40px); /* Adjust the width for three columns */
+  width: calc(300px - 40px); /* Adjust the width for three columns */
   margin: 5px;
 }
+
 @media (max-width: 1200px) {
+  .tv-items-one {
+    width: calc(250px - 40px); /* Adjust the width for three columns */
+    height: auto;
+    margin: 10px 0; /* Reduce vertical margin */
+  }
   .tv-items-tableone {
     margin-top: 2em;
     background-color: #ebd398;
     color: #000;
     border-radius: 8px;
-    width: calc(100% - 40px); /* Adjust the width for three columns */
-    margin: 5px;
+    width: calc(300px - 40px); /* Adjust the width for three columns */
+    margin: 1px 0;
   }
 }
 
 .tv-items-tableone span {
-  padding: 35px;
+  padding: 10px;
   color: #000;
   font-weight: 600;
 }
@@ -4907,12 +4901,11 @@ footer.inner-footer.footer::before {
 .table_data_silver {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin: auto;
-  width: 80.5%;
+  max-width: calc(760px - 40px);
   font-size: 20px;
-  background: #d9d9d9;
-  margin-top: 5px;
+  background: #d9d9d9 !important;
   text-align: center;
   font-weight: 600;
   color: #000;
@@ -4923,7 +4916,8 @@ footer.inner-footer.footer::before {
   }
   .table_data_silver {
     margin: auto;
-    width: 87%;
+    max-width: calc(708px - 40px);
+    margin-top: -30px;
     font-size: 16px;
   }
   .table_data_aed {
@@ -4933,14 +4927,31 @@ footer.inner-footer.footer::before {
     font-size: 14px;
   }
   .tv-items-tableone span {
-    padding: 10px;
+    padding: 16px;
     color: #000;
     font-size: 12px;
     font-weight: 400;
   }
 }
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .tv-items {
+    flex-direction: column; /* Stack items vertically */
+  }
 
-@media (min-width: 1201px) and (max-width: 2000px) {
+  .tv-items-one {
+    width: calc(250px - 40px); /* Adjust the width for three columns */
+    height: auto;
+    margin: 10px 0; /* Reduce vertical margin */
+  }
+  .table_data_silver {
+    margin: auto;
+    max-width: calc(300px - 40px);
+    margin-top: -30px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 3000px) {
   .tv-header {
     margin-top: 5em;
   }
@@ -4949,12 +4960,13 @@ footer.inner-footer.footer::before {
     background-color: #ebd398;
     color: #000;
     border-radius: 8px;
-    width: calc(50% - 40px); /* Adjust the width for three columns */
+    width: calc(200px- 40px); /* Adjust the width for three columns */
     margin: 5px;
   }
   .table_data_silver {
     margin: auto;
-    width: 96.6%;
+    max-width: inherit;
+    margin-top: -30px;
     font-size: 16px;
   }
 }
