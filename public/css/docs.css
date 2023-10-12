@@ -4608,8 +4608,6 @@ footer.inner-footer.footer::before {
   }
 }
 
-.modal {
-}
 .vertical-alignment-helper {
   display: table;
   height: 100%;
@@ -4794,24 +4792,26 @@ footer.inner-footer.footer::before {
   background-color: #ebd398;
   color: #000;
   border-radius: 8px;
-  width: calc(250px - 40px); /* Adjust the width for three columns */
+  padding: 8px 0px 0px 0px;
+  width: calc(350px - 40px); /* Adjust the width for three columns */
   height: auto;
   margin: 5px;
 }
 
 .tv-items-one span {
-  padding: 8px;
+  font-size: 30px;
+  padding: 10px;
   color: #000;
   font-weight: 400;
 }
 
 .tv-items-one span:nth-child(2n) {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .tv-items-data {
   background-color: #16184b;
-  padding: 10px;
+  padding: 20px;
   color: #fff;
   text-align: center;
 }
@@ -4819,7 +4819,7 @@ footer.inner-footer.footer::before {
 .tv_data_green {
   color: #18ae4b;
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
   padding: 1px;
   font-style: normal;
   font-weight: 500;
@@ -4840,16 +4840,25 @@ footer.inner-footer.footer::before {
   padding: 30px;
   gap: 0px;
 }
+.tv_items_even{
+  font-size: 20px;
+}
 .tv-items-tableone {
-  margin-top: 2em;
+  margin-top: 1.5em;
+  font-size: 22px;
   background-color: #ebd398;
   color: #000;
   border-radius: 8px;
-  width: calc(300px - 40px); /* Adjust the width for three columns */
+  padding: 10px 0px 0px 0px;
+  width: calc(350px - 40px); /* Adjust the width for three columns */
+  height: auto;
   margin: 5px;
 }
 .ace_img_display {
   visibility: visible;
+}
+.ace_img_display img {
+  width: 60%;
 }
 @media (max-width: 1200px) {
   .tv-items-one {
@@ -4884,7 +4893,7 @@ footer.inner-footer.footer::before {
 }
 .table_data_weight {
   color: #000;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -4959,7 +4968,7 @@ footer.inner-footer.footer::before {
 }
 @media (min-width: 1201px) and (max-width: 3000px) {
   .tv-header {
-    margin-top: 5em;
+    margin-top: 3em;
   }
   .tv-items-tableone {
     margin-top: 2em;
@@ -4971,9 +4980,9 @@ footer.inner-footer.footer::before {
   }
   .table_data_silver {
     margin: auto;
-    max-width: 810px;
+    max-width: 822px;
     margin-top: -30px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
-/***** End tv page *****/
+/***** End tv page *****
