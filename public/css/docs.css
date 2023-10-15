@@ -4775,16 +4775,16 @@ footer.inner-footer.footer::before {
 /***** tv page *****/
 /* Default styles for larger screens */
 .tv-header {
-  margin-top: 10em;
+  margin-top: 8em;
 }
 .tv-items {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 10px;
-  gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 0px;
 }
 
 .tv-items-one {
@@ -4799,8 +4799,8 @@ footer.inner-footer.footer::before {
 }
 
 .tv-items-one span {
-  font-size: 30px;
-  padding: 10px;
+  font-size: 22px;
+  padding: 5px;
   color: #000;
   font-weight: 400;
 }
@@ -4819,7 +4819,7 @@ footer.inner-footer.footer::before {
 .tv_data_green {
   color: #18ae4b;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   padding: 1px;
   font-style: normal;
   font-weight: 500;
@@ -4855,10 +4855,11 @@ footer.inner-footer.footer::before {
   margin: 5px;
 }
 .ace_img_display {
-  visibility: visible;
+display: flex;
+justify-content: center;
 }
 .ace_img_display img {
-  width: 60%;
+  width: 200px;
 }
 @media (max-width: 1200px) {
   .tv-items-one {
@@ -4924,7 +4925,7 @@ footer.inner-footer.footer::before {
 }
 @media (max-width: 1200px) {
   .tv-header {
-    margin-top: 5em;
+    margin-top: 3em;
   }
   .table_data_silver {
     margin: auto;
@@ -4946,7 +4947,15 @@ footer.inner-footer.footer::before {
   }
 }
 /* Styles for smaller screens */
-@media (max-width: 768px) {
+@media  (max-width: 567px) {
+  .table_data_silver {
+    margin: auto;
+    max-width: calc(300px - 40px);
+    margin-top: -30px;
+    font-size: 16px;
+  }
+}
+@media (min-width:568px) and (max-width: 768px) {
   .tv-items {
     flex-direction: column; /* Stack items vertically */
   }
@@ -4958,12 +4967,9 @@ footer.inner-footer.footer::before {
   }
   .table_data_silver {
     margin: auto;
-    max-width: calc(300px - 40px);
+    max-width: calc(622px - 40px);
     margin-top: -30px;
     font-size: 16px;
-  }
-  .ace_img_display {
-    display: none;
   }
 }
 @media (min-width: 1201px) and (max-width: 3000px) {
@@ -4980,7 +4986,7 @@ footer.inner-footer.footer::before {
   }
   .table_data_silver {
     margin: auto;
-    max-width: 822px;
+    max-width: 876px;
     margin-top: -30px;
     font-size: 20px;
   }
