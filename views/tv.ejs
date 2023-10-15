@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta name="description" content="Ace gold is India's most trusted digital platform for gold and silver where you can buy, sell and store online at live market rates." />
+  <meta name="description"
+    content="Ace gold is India's most trusted digital platform for gold and silver where you can buy, sell and store online at live market rates." />
   <meta name="keywords" content="ace gold, Buy Ace gold" />
   <meta property="og:type" content="Artical" />
   <meta property="og:title" content="Ace gold: Buy, Sell, Gift & SIP in Gold at Lowest Market Price" />
-  <meta property="og:description" content="Ace gold is India's most trusted digital platform for gold  where you can buy, sell and store online at live market rates." />
+  <meta property="og:description"
+    content="Ace gold is India's most trusted digital platform for gold  where you can buy, sell and store online at live market rates." />
   <title> Ace gold: Buy, Sell, Gift & SIP in Gold at Lowest Market Price | Ace gold</title>
   <meta property="og:url" content="index.html" />
   <meta property="og:site_name" content="www.ace gold.com" />
@@ -17,7 +20,8 @@
 
 
   <!-- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
   <!-- End Facebook Pixel Code -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,6 +40,7 @@
     .quickbuy-block:before {
       background-image: url("/images/ACE\ Gold\ Logo\ Transparent.png");
     }
+
     /* cyrillic-ext */
     @font-face {
       font-family: 'Montserrat';
@@ -736,11 +741,13 @@
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
   </style>
-<!-- socket script -->
-<script src="/socket.io/socket.io.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.5.0/socket.io.js" integrity="sha512-ttqbKrGZiTtSLguBZ2xNvZrhUv02IO/TRq5U6TG5TK90wbaXWup5kIJ1A1tLzjOk5Mea/G4seVNrU+lwTLfAzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- socket script -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.5.0/socket.io.js"
+    integrity="sha512-ttqbKrGZiTtSLguBZ2xNvZrhUv02IO/TRq5U6TG5TK90wbaXWup5kIJ1A1tLzjOk5Mea/G4seVNrU+lwTLfAzA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- api -->
+  <!-- api -->
   <script src='../www.google.com/recaptcha/api.js'></script>
   <script type="text/javascript">
     var playstore_link = "https://play.google.com/store/apps/details?id=com.aiwwah.app.ace gold&pcampaignid=web_share";
@@ -749,93 +756,94 @@
 
   <meta name="ahrefs-site-verification" content="5e5ad8d2f3a724f01776dad8580d784785a4265e3a73cdf6fb5b457e7b90a583">
 </head>
+
 <body style="background-color: #0D1D3A">
-   <!-- ========== Start header ========== -->
-<%-include("layouts/header.ejs")%>
-<!-- ========== End header ========== --> 
-<div class="tv-header">
-<div class="center_div tv-items">
-   
-    <div class="tv-items-one">
+  <div class="tv-header">
+    <div class="ace_img_display">
+      <img src="/images/ACE Gold Logo Transparent.png" alt="">
+    </div>
+    <div class="center_div tv-items">
+      <div class="tv-items-one">
         <div class="bid_head">
-            <span>OZ</span><span>BID</span><span>USD</span>
+          <span>OZ</span><span>BID</span><span>USD</span>
         </div>
         <div class="tv-items-data">
-            <h3 class="tv_items_even">GOLD</h3>
-            <h2 class="tv_data_green" id="data-container2">---</h2>
-            <div style="display: flex;justify-content: center;">
-                <p class="tv_items_even">Low -</p>
-                <p class="tv_items_even" id="data-low"></p>
-              </div>
+          <h3 class="tv_items_even">GOLD</h3>
+          <h2 class="tv_data_green" id="data-container2">---</h2>
+          <div style="display: flex;justify-content: center;">
+            <p class="tv_items_even">Low -</p>
+            <p class="tv_items_even" id="data-low"></p>
+          </div>
         </div>
-    </div>
-    <div class="tv-items-one tv_bg_none ace_img_display">
-      <div ><img src="/images/ACE Gold Logo Transparent.png" alt=""></div>
-  </div> 
-    <div class="tv-items-one">
+      </div>
+
+      <div class="tv-items-one">
         <div class="bid_head">
-            <span>OZ</span><span>ASK</span><span>USD</span>
+          <span>OZ</span><span>ASK</span><span>USD</span>
         </div>
         <div class="tv-items-data">
-            <h3 class="tv_items_even">GOLD</h3>
-            <h2 class="tv_data_green" id="data-container1">---</h2>
-            <div style="display: flex;justify-content: center;">
-                <p class="tv_items_even">HIGH -</p>
-                <p class="tv_items_even" id="data-high"></p>
-              </div>
+          <h3 class="tv_items_even">GOLD</h3>
+          <h2 class="tv_data_green" id="data-container1">---</h2>
+          <div style="display: flex;justify-content: center;">
+            <p class="tv_items_even">HIGH -</p>
+            <p class="tv_items_even" id="data-high"></p>
+          </div>
         </div>
-    </div>
-    <div class="market-data" id="market_data_items">
+      </div>
+      <div class="market-data" id="market_data_items">
         <i class="fa fa-exclamation-circle warning-icon"></i>
         Market Closed
       </div>
-</div>
+    </div>
 
-<!-- ========== Start table ========== -->
-<div class="tv-items-table">
-    
-    <div class="tv-items-tableone">
- <div class="bid_head_table">
-    <span>WEIGHT</span><span>(AED)</span>
-   <div class="tv_table_data_items">
-    <div class="tv_table_data">
-        <div class="table_data_weight">TT BAR</div>
-        <div class="table_border"></div>
-    <div class="table_data_aed" id="gold">---</div>
-    </div>
-    <div class="tv_table_data">
-        <div class="table_data_weight">995 1KG</div>
-        <div class="table_border"></div>
-    <div class="table_data_aed" id="gold995">---</div>
-    </div>
-   </div>
-    </div>
-    </div>
-   
-    <div class="tv-items-tableone">
+    <!-- ========== Start table ========== -->
+    <div class="tv-items-table">
+
+      <div class="tv-items-tableone">
         <div class="bid_head_table">
-           <span>WEIGHT</span><span>(AED)</span>
+          <span>WEIGHT</span><span>(AED)</span>
           <div class="tv_table_data_items">
-           <div class="tv_table_data">
-               <div class="table_data_weight">1 GRAM</div>
-               <div class="table_border"></div>
-           <div class="table_data_aed" id="gold9999gm">---</div>
-           </div>
-           <div class="tv_table_data">
-               <div class="table_data_weight">9999 1KG</div>
-               <div class="table_border"></div>
-           <div class="table_data_aed" id="gold9999"></div>
-           </div>
+            <div class="tv_table_data">
+              <div class="table_data_weight">TT BAR</div>
+              <div class="table_border"></div>
+              <div class="table_data_aed" id="gold">---</div>
+            </div>
+            <div class="tv_table_data">
+              <div class="table_data_weight">995 1KG</div>
+              <div class="table_border"></div>
+              <div class="table_data_aed" id="gold995">---</div>
+            </div>
           </div>
-           </div>    
-           </div>        
+        </div>
+      </div>
+
+      <div class="tv-items-tableone">
+        <div class="bid_head_table">
+          <span>WEIGHT</span><span>(AED)</span>
+          <div class="tv_table_data_items">
+            <div class="tv_table_data">
+              <div class="table_data_weight">1 GRAM</div>
+              <div class="table_border"></div>
+              <div class="table_data_aed" id="gold9999gm">---</div>
+            </div>
+            <div class="tv_table_data">
+              <div class="table_data_weight">9999 1KG</div>
+              <div class="table_border"></div>
+              <div class="table_data_aed" id="gold9999"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container">
-      <div class="table_data_silver"><h2>SILVER 1KG</h2> <h2 id="silver"></h2></div>
+      <div class="table_data_silver">
+        <h2>SILVER 1KG</h2>
+        <h2 id="silver"></h2>
+      </div>
     </div>
-<!-- ========== End table ========== -->
-</div>
-<script>
+    <!-- ========== End table ========== -->
+  </div>
+  <script>
     const socketUrl = "https://walrus-app-k59sj.ondigitalocean.app?franchiseId=646c8c2d66d5379aede9313f";
     const socket = io(socketUrl, {
       transports: ["websocket"],
@@ -960,7 +968,7 @@
       console.log("Disconnected from the server");
     });
   </script>
-   <script type="text/javascript">
+  <script type="text/javascript">
     const COUNTRY_URL = "../ajax/get/countrie.html",
       STATE_URL = "../ajax/get/states.html",
       CITY_URL = "../ajax/get/cities.html";
@@ -990,4 +998,5 @@
   <script src="../js/authentication.js"></script>
   <script src="../js/theme.js"></script>
 </body>
+
 </html>
