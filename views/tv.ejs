@@ -862,6 +862,8 @@
     // Listen for "message" event from the server
     socket.on("message", (data) => {
       console.log(data);
+      let commnBuy = parseFloat(data.COMMONBUY);
+      let commonSell = parseFloat(data.COMMONSELL)
       let market = document.getElementById('market_data_items')
       market.style.display = 'none';
 
@@ -884,7 +886,7 @@
 
 
       // fixed-price low
-      let priceLow = parseFloat(data.XAUUSD.bid - data.COMMONSELL).toFixed(2);
+      let priceLow = parseFloat(data.XAUUSD.bid - commonSell).toFixed(2);
       priceLow = parseFloat(priceLow).toLocaleString();
       if (!lastPriceLow || lastPriceLow === priceLow) {
         stockPriceLow.style.color = 'white';
@@ -897,7 +899,7 @@
       lastPriceLow = priceLow;
 
       //fixed-price high
-      let priceHigh = parseFloat(data.XAUUSD.ask + 0.40).toFixed(2); // Get the price with 2 decimal places
+      let priceHigh = parseFloat(data.XAUUSD.ask + commnBuy).toFixed(2); // Get the price with 2 decimal places
       priceHigh = parseFloat(priceHigh).toLocaleString();
       if (!lastPriceHigh || lastPriceHigh === priceHigh) {
         stockPriceHigh.style.color = 'white';
