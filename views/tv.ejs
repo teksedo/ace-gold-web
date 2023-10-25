@@ -842,7 +842,7 @@
     <!-- ========== End table ========== -->
   </div>
   <script>
-    const socketUrl = "https://walrus-app-k59sj.ondigitalocean.app?franchiseId=646c8c2d66d5379aede9313f";
+    const socketUrl = "wss://acegold.myacegold.com?franchiseId=646c8c2d66d5379aede9313f";
     const socket = io(socketUrl, {
       transports: ["websocket"],
       withCredentials: true
@@ -881,18 +881,7 @@
       let lowprice = parseFloat(data.XAUUSD.low).toFixed(2);
       dataPriceLow.innerText = lowprice;
 
-      //fixed-price high
-      let priceHigh = parseFloat(data.XAUUSD.ask - data.COMMONBUY).toFixed(2); // Get the price with 2 decimal places
-      priceHigh = parseFloat(priceHigh).toLocaleString();
-      if (!lastPriceHigh || lastPriceHigh === priceHigh) {
-        stockPriceHigh.style.color = 'white';
-      } else if (priceHigh > lastPriceHigh) {
-        stockPriceHigh.style.color = 'green';
-      } else {
-        stockPriceHigh.style.color = 'red';
-      }
-      stockPriceHigh.innerText = priceHigh;
-      lastPriceHigh = priceHigh;
+
 
       // fixed-price low
       let priceLow = parseFloat(data.XAUUSD.bid - data.COMMONSELL).toFixed(2);
@@ -907,7 +896,18 @@
       stockPriceLow.innerText = priceLow;
       lastPriceLow = priceLow;
 
-
+      //fixed-price high
+      let priceHigh = parseFloat(data.XAUUSD.ask + 0.40).toFixed(2); // Get the price with 2 decimal places
+      priceHigh = parseFloat(priceHigh).toLocaleString();
+      if (!lastPriceHigh || lastPriceHigh === priceHigh) {
+        stockPriceHigh.style.color = 'white';
+      } else if (priceHigh > lastPriceHigh) {
+        stockPriceHigh.style.color = 'green';
+      } else {
+        stockPriceHigh.style.color = 'red';
+      }
+      stockPriceHigh.innerText = priceHigh;
+      lastPriceHigh = priceHigh;
       // Assuming data.XAUUSD.bid is a valid number and data.GOLD995 is a valid number in string format
 
       // Parse the socketvalue in socket
