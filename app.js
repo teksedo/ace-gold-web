@@ -1,16 +1,12 @@
-var express = require("express");
-var createError = require("http-errors");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-var app = express();
+const express = require("express");
+const createError = require("http-errors");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const app = express();
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-var contactRouter = require("./routes/contact");
-var aboutRouter = require("./routes/about");
-var productRouter = require("./routes/products");
-var tvRouter = require("./routes/tv");
+// route page start
+const indexRouter = require("./routes/index");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -22,11 +18,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/contact", contactRouter);
-app.use("/about", aboutRouter);
-app.use("/users", usersRouter);
-app.use("/product-details", productRouter);
-app.use("/tv", tvRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
